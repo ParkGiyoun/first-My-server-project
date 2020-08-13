@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+html(lang="ko")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Document
+        style
+            include ./style.css
+    body
+        a(href="/main" class="mainTitleLink")
+            p1(class="mainTitle") To Do
+        ul(class="dataList")
+            -if(dataList !== undefined)
+                -
+                    const list = dataList 
+                each item in list 
+                    a(href=`/main/${item}`)
+                        li= item
+        div(class="descriptionContainer")
+            h4(class="desTitle")= title
+            p(class="description")= description
+        a(href="/form" class="newBtn")
+            button(type="submit") new

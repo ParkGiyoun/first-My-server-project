@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body,
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.mainContainer .titleInput {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+.mainContainer .titleInput input {
+  padding: 10px;
+}
+.mainContainer h4 {
+  margin-right: 10px;
+}
+.mainContainer .descriptionInput textarea {
+  padding: 10px;
+}
+
+.mainContainer .submitBtnContainer {
+  width: 10%;
+}
+.mainContainer .submitBtnContainer input {
+  outline: none;
+  width: 100%;
+  border: none;
+  background-color: #b3e5fc;
+  padding: 10px, 5px;
+}
+.mainContainer .submitBtnContainer input:active {
+  outline: none;
+  background-color: #e3f2fd;
+}
+
+.back {
+  width: 5%;
+}
+.back button {
+  outline: none;
+  width: 100%;
+  border: none;
+  background-color: #b3e5fc;
+  padding: 10px, 5px;
+}
+.back button:active {
+  outline: none;
+  background-color: #e3f2fd;
+}

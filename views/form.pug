@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+html(lang="ko")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Document
+        style
+            include ./form.css
+    body
+        form(action="/main", method="post" class="mainContainer")
+            div(class="titleInput")
+                h4 Title
+                input(type="text", name="title")
+            p(class="descriptionInput")
+                textarea(name='description', cols="30", rows="10")
+            p(class="submitBtnContainer")
+                input(type="submit")
+        form(action="/main", method="get" class="back")
+            button(type="submit") 뒤로
